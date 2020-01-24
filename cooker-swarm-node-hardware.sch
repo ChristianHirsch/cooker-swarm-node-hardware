@@ -213,7 +213,7 @@ U 1 1 5DE6A3ED
 P 2200 2350
 F 0 "J3" H 2200 1750 50  0000 C CNN
 F 1 "Conn_OUTPUT" H 2000 1650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 2200 2350 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 2200 2350 50  0001 C CNN
 F 3 "~" H 2200 2350 50  0001 C CNN
 	1    2200 2350
 	-1   0    0    -1  
@@ -288,39 +288,6 @@ Wire Wire Line
 	2400 2150 2700 2150
 Wire Wire Line
 	2700 2150 2700 2350
-$Comp
-L Amplifier_Operational:MCP6002-xMC U2
-U 1 1 5DE6A8AB
-P 9700 2650
-F 0 "U2" H 9700 3017 50  0000 C CNN
-F 1 "MCP6002-xMC" H 9700 2926 50  0000 C CNN
-F 2 "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm" H 9700 2650 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9700 2650 50  0001 C CNN
-	1    9700 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6002-xMC U2
-U 2 1 5DE6A930
-P 9700 3450
-F 0 "U2" H 9700 3817 50  0000 C CNN
-F 1 "MCP6002-xMC" H 9700 3726 50  0000 C CNN
-F 2 "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm" H 9700 3450 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9700 3450 50  0001 C CNN
-	2    9700 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:MCP6002-xMC U2
-U 3 1 5DE6A988
-P 10600 1050
-F 0 "U2" H 10558 1096 50  0000 L CNN
-F 1 "MCP6002-xMC" H 10558 1005 50  0000 L CNN
-F 2 "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.75x1.45mm" H 10600 1050 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10600 1050 50  0001 C CNN
-	3    10600 1050
-	1    0    0    -1  
-$EndComp
 Text Label 9400 3350 2    50   ~ 0
 POWER_IN
 Wire Wire Line
@@ -383,17 +350,6 @@ F 1 "+5V" H 10515 923 50  0000 C CNN
 F 2 "" H 10500 750 50  0001 C CNN
 F 3 "" H 10500 750 50  0001 C CNN
 	1    10500 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0125
-U 1 1 5DE6ACED
-P 10500 1350
-F 0 "#PWR0125" H 10500 1100 50  0001 C CNN
-F 1 "GND" H 10505 1177 50  0000 C CNN
-F 2 "" H 10500 1350 50  0001 C CNN
-F 3 "" H 10500 1350 50  0001 C CNN
-	1    10500 1350
 	1    0    0    -1  
 $EndComp
 Text Label 10650 3850 0    50   ~ 0
@@ -738,4 +694,48 @@ Wire Wire Line
 	6900 2050 7000 2050
 NoConn ~ 6900 1950
 NoConn ~ 6900 1750
+$Comp
+L Amplifier_Operational:MCP6002-xMS U2
+U 1 1 5E20C0F7
+P 9700 2650
+F 0 "U2" H 9700 3017 50  0000 C CNN
+F 1 "MCP6002-xMS" H 9700 2926 50  0000 C CNN
+F 2 "Package_SO:MSOP-8_3x3mm_P0.65mm" H 9700 2650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9700 2650 50  0001 C CNN
+	1    9700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6002-xMS U2
+U 2 1 5E20C183
+P 9700 3450
+F 0 "U2" H 9700 3817 50  0000 C CNN
+F 1 "MCP6002-xMS" H 9700 3726 50  0000 C CNN
+F 2 "" H 9700 3450 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 9700 3450 50  0001 C CNN
+	2    9700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:MCP6002-xMS U2
+U 3 1 5E20C296
+P 10600 1050
+F 0 "U2" H 10558 1096 50  0000 L CNN
+F 1 "MCP6002-xMS" H 10558 1005 50  0000 L CNN
+F 2 "" H 10600 1050 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf" H 10600 1050 50  0001 C CNN
+	3    10600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 5DE6ACED
+P 10500 1350
+F 0 "#PWR0125" H 10500 1100 50  0001 C CNN
+F 1 "GND" H 10505 1177 50  0000 C CNN
+F 2 "" H 10500 1350 50  0001 C CNN
+F 3 "" H 10500 1350 50  0001 C CNN
+	1    10500 1350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
